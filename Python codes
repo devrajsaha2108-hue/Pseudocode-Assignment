@@ -1,0 +1,97 @@
+#CountDiv
+A = int(input("Enter a value for A: "))
+B = int(input("Enter a value for B: "))
+K = int(input("Enter a value for K: "))
+
+def solution(int A, int B, int K):
+count = 0
+for i in range(A, B+1)
+ if i % K == 0:
+  count += 1
+
+return count
+
+#Missing integer
+#initializing A as an Array
+A = list(map(int, input("Enter the array elements seperated by spaces: ").split()))
+#now writing the function
+def solution(A):
+#initializing n as length(A) + 1
+n = len(A) + 1
+#set present as A
+present = set(A)
+#using a for loop to iterate through the elements and trying to find the missing element
+for i in range(1, n+1):
+  #using an if statement if i in not in present
+  if i not in present:
+    return i
+
+#PassingCars
+#initializing A as an Array
+A = list(map(int, input("Enter the array elements seperated by spaces: ").split()))
+#now writing the function
+def solution(A):
+#initialize the cars going east as 0
+east_cars = 0
+#initialize pairs 0
+pair = 0
+#using a for loop that goes through each car in A:
+for car in A:
+#using an If statement when car = 0
+if car == 0:
+  east_cars += 1
+else
+  pairs += east_cars
+# Use an if statement when (pairs > 1,000,000,000):
+        if pairs > 1000000000:
+            # Then return -1
+            return -1
+            
+    # Return pairs
+    return pairs
+
+#OddOccurancesInArray
+A = list(map(int, input("Enter the array elements seperated by spaces: ").split()))
+#now writing the function
+def solution(A):
+# Create an empty set called odd_count[cite: 3]
+    odd_count = set()
+# Use a for loop that goes through each element in A:
+    for element in A:
+      # Use an if statement when (element is already in odd_count):
+        if element in odd_count:
+            # Then remove element from odd_count[cite: 3]
+            odd_count.remove(element)
+        else:
+            # Then add element to odd_count
+            odd_count.add(element)
+            
+    # Return one element left in odd_count
+    for x in odd_count:
+        return x
+
+#Frog Jump
+# Take an integer user input for X:
+X = int(input("Enter X: "))
+
+# Take an integer user input for Y:
+Y = int(input("Enter Y: "))
+
+# Take an integer user input for D:
+D = int(input("Enter D: "))
+
+# Use the function solution (pass int X, pass int Y, pass int D)
+def solution(X, Y, D):
+    # Initialize distance as Y - X
+    distance = Y - X
+    
+    # Initialize jumps as distance // D
+    jumps = distance // D
+    
+    # Use an if statement (distance % D != 0):
+    if distance % D != 0:
+        # Then jump increments by 1
+        jumps += 1
+        
+    # Return jumps[cite: 4]
+    return jumps
