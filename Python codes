@@ -54,21 +54,13 @@ else
 A = list(map(int, input("Enter the array elements seperated by spaces: ").split()))
 #now writing the function
 def solution(A):
-# Create an empty set called odd_count[cite: 3]
+    # Implement your solution here
+    # Create an empty set called odd_count
     odd_count = set()
-# Use a for loop that goes through each element in A:
+    
+    # Use a for loop that goes through each element in A:
     for element in A:
-      # Use an if statement when (element is already in odd_count):
-        if element in odd_count:
-            # Then remove element from odd_count[cite: 3]
-            odd_count.remove(element)
-        else:
-            # Then add element to odd_count
-            odd_count.add(element)
-            
-    # Return one element left in odd_count
-    for x in odd_count:
-        return x
+…        return x
 
 #Frog Jump
 # Take an integer user input for X:
