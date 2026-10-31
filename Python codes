@@ -85,5 +85,5 @@ def solution(X, Y, D):
         # Then jump increments by 1
         jumps += 1
         
-    # Return jumps[cite: 4]
+    # Return jumps
     return jumps
